@@ -14,6 +14,6 @@ prompt_template = RunnableLambda(lambda x: ChatPromptTemplate.from_messages(Mess
 model_invoke = RunnableLambda(lambda x: model.invoke(x.to_messages()))
 output = RunnableLambda(lambda x: x.content)
 
-chains = RunnableSequence([prompt_template, model_invoke, output])
+chains = RunnableSequence(first = prompt_template,middle = [ model_invoke ], last = output)
 response = chains.invoke({"topic": "technology", "number": 5})
 print("AI response: ", response)
