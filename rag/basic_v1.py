@@ -6,7 +6,7 @@ from langchain_community.vectorstores import Chroma
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 book_path = os.path.join(current_dir, "books", "odyssey.txt")
-db_path = os.path.join(current_dir, "db", "chroma_db")
+db_path = os.path.join(current_dir, "db", "chroma_db") 
 
 if not os.path.exists(db_path):
     print("Persistent directory does not exist. Initializing vector store...")
