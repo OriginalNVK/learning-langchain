@@ -3,7 +3,7 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain.text_splitter import CharacterTextSplitter
 from dotenv import load_dotenv
-from langchain.document_loaders import WebBaseLoader
+from langchain_community.document_loaders import WebBaseLoader
 
 load_dotenv()
 
@@ -14,11 +14,14 @@ storage_dir = os.path.join(db_dir, "chroma_db_apple")
 url = "https://apple.com"
 
 loader = WebBaseLoader(url)
-documents = loader.load()
+content = loader.load()
+
+text_splitter = CharacterTextSplitter(chunk_size = 1000, chunk_overlap = 200)
+docs = text_splitter.split_text(content)
 embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 
 storage_data = Chroma.from_documents(
-    documents, embeddings, storage_dir)
+    docs, embeddings, storage_dir)
 
 query = "What is the latest news about Apple?"
 db = Chroma(embedding_function = embeddings, persist_directory = storage_dir)
