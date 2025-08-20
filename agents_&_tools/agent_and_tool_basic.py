@@ -1,6 +1,6 @@
 from langchain_openai import ChatOpenAI
-from langchain_core.agents import AgentExecutor, create_react_agent
-from langchain_core.tools import Tool
+from langchain.agents import AgentExecutor, create_react_agent
+from langchain.tools import Tool
 from dotenv import load_dotenv
 from langchain import hub
 
@@ -27,13 +27,13 @@ agents = create_react_agent(
     llm, tools, prompt_template, stop_sequence=True
 )
 
-ag_and_tool = AgentExecutor.create_agent_and_tool(
+ag_and_tool = AgentExecutor.from_agent_and_tools(
     tools=tools,
-    agents=agents,
+    agent=agents,
     verbose=True
 )
 
 query = "What time is it?"
-response = ag_and_tool.invoke(query)
+response = ag_and_tool.invoke({"input": query})
 
 print("AI response: ", response)
