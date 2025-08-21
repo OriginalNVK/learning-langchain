@@ -1,6 +1,6 @@
-# LangChain Crash Course
+# LangChain Course
 
-Welcome to the LangChain Crash Course repository! This repo contains all the code examples you'll need to follow along with the LangChain Master Class for Beginners video. By the end of this course, you'll know how to use LangChain to create your own AI agents, build RAG chatbots, and automate tasks with AI.
+Welcome to the LangChain Course repository! This repo contains all the code examples you'll need to follow along with the LangChain Master Class for Beginners. By the end of this course, you'll know how to use LangChain to create your own AI agents, build RAG chatbots, and automate tasks with AI.
 
 ## Course Outline
 
@@ -24,8 +24,8 @@ Welcome to the LangChain Crash Course repository! This repo contains all the cod
 
    ```bash
    <!-- TODO: UPDATE TO MY  -->
-   git clone https://github.com/bhancockio/langchain-crash-course
-   cd langchain-crash-course
+   git clone https://github.com/OriginalNVK/learning-langchain
+   cd learning-langchain
    ```
 
 2. Install dependencies using Poetry:
@@ -51,7 +51,7 @@ Welcome to the LangChain Crash Course repository! This repo contains all the cod
 5. Run the code examples:
 
    ```bash
-    python 1_chat_models/1_chat_model_basic.py
+    python chat_models/basic.py
    ```
 
 ## Repository Structure
@@ -60,67 +60,66 @@ Here's a breakdown of the folders and what you'll find in each:
 
 ### 1. Chat Models
 
-- `1_chat_model_basic.py`
-- `2_chat_model_basic_conversation.py`
-- `3_chat_model_alternatives.py`
-- `4_chat_model_conversation_with_user.py`
-- `5_chat_model_save_message_history_firestore.py`
+- `basic.py`
+- `basic_conversation.py`
+- `chat_alternatives.py`
+- `conversation_with_user.py`
+- `conversation_save_into_firestore.py`
 
 Learn how to interact with models like ChatGPT, Claude, and Gemini.
 
 ### 2. Prompt Templates
 
-- `1_prompt_template_basic.py`
-- `2_prompt_template_with_chat_model.py`
+- `basic.py`
+- `template_with_chat_model.py`
 
 Understand the basics of prompt templates and how to use them effectively.
 
 ### 3. Chains
 
-- `1_chains_basics.py`
-- `2_chains_under_the_hood.py`
-- `3_chains_extended.py`
-- `4_chains_parallel.py`
-- `5_chains_branching.py`
+- `basics.py`
+- `chains_under_the_hood.py`
+- `chains_extend.py`
+- `chains_parallel.py`
+- `chains_branches.py`
 
 Learn how to create chains using Chat Models and Prompts to automate tasks.
 
 ### 4. RAG (Retrieval-Augmented Generation)
 
-- `1a_rag_basics.py`
-- `1b_rag_basics.py`
-- `2a_rag_basics_metadata.py`
-- `2b_rag_basics_metadata.py`
-- `3_rag_text_splitting_deep_dive.py`
-- `4_rag_embedding_deep_dive.py`
-- `5_rag_retriever_deep_dive.py`
-- `6_rag_one_off_question.py`
-- `7_rag_conversational.py`
-- `8_rag_web_scrape_firecrawl.py`
-- `8_rag_web_scrape.py`
+- `basic_v1.py`
+- `basic_v2.py`
+- `basic_metadata_v1.py`
+- `basic_metadata_v2.py`
+- `text_splitting_deep_dive.py`
+- `embedding_deep_dive.py`
+- `retriever_deep_dive.py`
+- `rag_with_one_off_question.py`
+- `rag_conversational.py`
+- `crawl_scrape_advanced.py`
+- `web_scrape_basic.py`
 
 Explore the technologies like documents, embeddings, and vector stores that enable RAG queries.
 
 ### 5. Agents & Tools
 
-- `1_agent_and_tools_basics.py`
+- `agent_and_tool_basics.py`
 - `agent_deep_dive/`
-  - `1_agent_react_chat.py`
-  - `2_react_docstore.py`
+  - `agent_react_chat.py`
+  - `agent_react_docstore.py`
 - `tools_deep_dive/`
-  - `1_tool_constructor.py`
-  - `2_tool_decorator.py`
-  - `3_tool_base_tool.py`
+  - `constructor.py`
+  - `base_tool.py`
 
 Learn about agents, how they work, and how to build custom tools to enhance their capabilities.
 
 ## How to Use This Repository
 
-1. **Watch the Video:** Start by watching the LangChain Master Class for Beginners video on YouTube at 2X speed for a high-level overview.
+1. **Watch the Video:** [langchain-master-class-for-beginner](https://www.youtube.com/watch?v=yF9kGESAi3M&t=11328s)
 
 2. **Run the Code Examples:** Follow along with the code examples provided in this repository. Each section in the video corresponds to a folder in this repo.
 
-3. **Join the Community:** If you get stuck or want to connect with other AI developers, join the FREE Skool community [here](https://www.skool.com/ai-developer-accelerator/about).
+3. **Supportive Materials:** If you get stuck or want to ask any question. Connect my facebook [here](https://www.facebook.com/vankhanh.47.2004).
 
 ## Comprehensive Documentation
 
@@ -143,10 +142,12 @@ A: Yes! Contributions are welcome. Please open an issue or submit a pull request
 **Q: Where can I find more information about LangChain?**  
 A: Check out the official LangChain documentation and join the Skool community for additional resources and support.
 
-## Support
+## Thank You 🙏
 
-If you encounter any issues or have questions, feel free to open an issue on GitHub or ask for help in the Skool community.
+I would like to express my sincere gratitude to the YouTube channel for sharing the following video:  
+[langchain-master-class-for-beginner](https://www.youtube.com/watch?v=yF9kGESAi3M&t=11328s)
 
-## License
+This video has provided me with very valuable and practical knowledge.  
+Thank you for taking the time and effort to teach and share such useful content with the community.
 
-This project is licensed under the MIT License.
+Your contribution is truly appreciated! 🌟
