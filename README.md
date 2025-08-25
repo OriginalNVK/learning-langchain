@@ -196,23 +196,11 @@ This repository follows a structured learning approach from basic concepts to ad
 
 ---
 
-## 🚀 Next Steps
-
-Based on this learning journey, potential areas for expansion include:
-
-1. **Multi-Agent Systems**: Coordinating multiple specialized agents
-2. **Advanced Tool Integration**: API calls, database queries, external services
-3. **Production Deployment**: Scaling and monitoring considerations
-4. **Custom Model Fine-tuning**: Domain-specific adaptations
-5. **Advanced Graph Patterns**: Complex workflow orchestration
-
----
-
 ## 📖 Resources
 
 - **LangChain Documentation**: [python.langchain.com](https://python.langchain.com/)
 - **LangGraph Documentation**: Official LangGraph guides
-- **Course Reference**: [LangChain Master Class for Beginners](https://www.youtube.com/watch?v=yF9kGESAi3M&t=11328s)
+- **Course Reference**: [LangChain Master Class for Beginners](https://www.youtube.com/watch?v=yF9kGESAi3M&t=11328s) and [LangGraph Master Class for Beginners](https://www.youtube.com/watch?v=jGg_1h0qzaM&t=8960s)
 
 ---
 
