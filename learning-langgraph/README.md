@@ -1,4 +1,4 @@
-# LangChain Course
+# LangGraph Course
 
 Welcome to the LangGraph Course repository! This repo contains all the code examples you'll need to follow along with the LangGraph Master Class for Beginners. By the end of this course, you'll know how to use LangGraph to create your own AI agents, build RAG chatbots, and automate tasks with AI.
 
